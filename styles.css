@@ -1,0 +1,71 @@
+body{
+
+    min-height: 80vh;
+    background: linear-gradient(to right, red, yellow, blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.2rem;
+
+}
+
+.mainParent{
+    width: 300px;
+    background: linear-gradient(rgb(204,51,99), rgb(150,122,161));
+    padding: 2rem;
+    border: 5px solid black;
+    box-shadow: -4px 4px 12px blue;
+    
+}
+
+#result{
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 0.2rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.795);
+
+}
+
+.items{
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.050rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "plus reset minus"
+    ;
+}
+
+.items > button {
+    min-height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    background: rgba(211, 211, 211, 0.856);
+}
+
+.items > button:hover {
+    cursor: pointer;
+    background: white;
+    color: blue;
+}
+
+.plus{
+    grid-area: plus;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.reset{
+    grid-area: reset;
+}
